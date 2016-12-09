@@ -1,13 +1,13 @@
 {
   "name": "react-linkedin-login",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "React LinkedIn Login button",
-  "main": "./client/index.js",
+  "main": "./lib",
   "repository": "https://github.com/orionsoft/react-linkedin-login",
   "author": "nicolaslopezj",
   "license": "MIT",
   "scripts": {
-    "build": "babel ./src --out-dir ./client",
+    "build": "babel ./src --out-dir ./lib",
     "prepublish": "npm run build",
     "test": "npm run lint && jest",
     "watch": "watch npm\\ run\\ build ./src",
