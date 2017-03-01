@@ -1,6 +1,6 @@
 {
   "name": "react-linkedin-login",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "React LinkedIn Login button",
   "main": "./lib",
   "repository": "https://github.com/orionsoft/react-linkedin-login",
