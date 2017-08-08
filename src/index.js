@@ -6,15 +6,6 @@ import reset from './reset'
 /* global localStorage */
 
 export default class LinkedIn extends React.Component {
-
-  static propTypes = {
-    clientId: React.PropTypes.string,
-    callback: React.PropTypes.func.isRequired,
-    className: React.PropTypes.string,
-    text: React.PropTypes.node,
-    scope: React.PropTypes.arrayOf(React.PropTypes.string)
-  }
-
   componentDidMount () {
     this.restart()
   }
@@ -44,10 +35,20 @@ export default class LinkedIn extends React.Component {
 
   render () {
     return (
-      <button className={this.props.className} onClick={this.start}>
+      <button
+        className={this.props.className} 
+        onClick={this.start}
+        type={this.props.type}>
         {this.props.text}
       </button>
     )
   }
+}
 
+LinkedIn.propTypes = {
+  clientId: React.PropTypes.string,
+  callback: React.PropTypes.func.isRequired,
+  className: React.PropTypes.string,
+  text: React.PropTypes.node,
+  scope: React.PropTypes.arrayOf(React.PropTypes.string)
 }
