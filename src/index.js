@@ -35,7 +35,10 @@ export default class LinkedIn extends React.Component {
 
   render () {
     return (
-      <button className={this.props.className} onClick={this.start}>
+      <button
+        className={this.props.className} 
+        onClick={this.start}
+        type={this.props.type}>
         {this.props.text}
       </button>
     )
